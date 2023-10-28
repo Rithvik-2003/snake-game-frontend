@@ -1,0 +1,78 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    position: absolute;
+    z-index: 0;
+    top: 60px;
+    left: 100px;
+    width: 200px;
+    height: 200px;
+}
+.body{
+    background-color: black;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background-color: rgb(255, 255, 255);
+    width: 80vmin;
+    height: 80vmin;
+    border:red solid 5px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.snakehead{
+    background-color: rgb(0, 77, 137);
+    border: .25min solid white;
+    border-radius: 1px;
+}
+
+.snake{
+    background-color: rgb(0, 0, 255);
+}
+
+.food{
+    background-color: rgb(207, 98, 116);
+    border: .25vmin solid black;
+
+}
+
+#scoreBox{
+    font-family: 'Crimson Text', serif;
+    position: absolute;
+    top: 219px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#hiscoreBox{
+    font-family: 'Crimson Text', serif;
+    position: absolute;
+    top: 289px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+#instructions{
+    font-family: 'Crimson Text', serif;
+    position: absolute;
+    width: 200px;
+    bottom: 60px;
+    left: 100px;
+    font-size: 19px;
+    font-weight: bold;
+    color: aliceblue;
+}
